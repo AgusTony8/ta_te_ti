@@ -1,0 +1,47 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.casilla {
+    border: 1px solid #ccc;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.casilla:hover {
+    background-color: #eee;
+}
+
+#mensajes {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+#start{
+    width: 300px;
+    height: 100px;
+    margin-left: 25px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 1em;
+    cursor:crosshair;
+}
