@@ -45,3 +45,13 @@ h1 {
     font-size: 1em;
     cursor:crosshair;
 }
+
+.won{
+    position: absolute;
+    top: 0px;
+    width: 100em;
+    height: 100em;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}

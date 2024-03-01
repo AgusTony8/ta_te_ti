@@ -1,24 +1,20 @@
 // board layout
-let estadoJuego = { simb: "O"}
-const board = (function() {
-    const x = "X"
-    const o = "O"
-    const cuadrados = document.querySelectorAll(".casilla")
 
-    const marcar = (jugador)
-    cuadrados.forEach((cuadrados,i) =>{
-        cuadrados.addEventListener("click", () =>{
-            cuadrados.innerText = jugador.simb;
-            console.log('"CUADRADO", i:', " CUADRADO", i)
+const gameBoard = (function() {
+    //getting all the tiles on the board 
+    const square = document.querySelectorAll(".casilla")
+ 
+    const mark = (player) =>{
+        square.forEach((cuadrados,i) =>{
+            cuadrados.addEventListener("click", () =>{
+                
+                cuadrados.innerText = player.simbol;
+
+            })
         })
-    })
-})();
-// const cuadrados = document.querySelectorAll(".casilla")
+    }
+    return{mark}
 
-//     cuadrados.forEach((cuadrados,i) =>{
-//         cuadrados.addEventListener("click", () =>{
-//             cuadrados[i]
-//             console.log('cuadrados:', cuadrados)
-            
-//         })
-//     })
+})();
+
+
