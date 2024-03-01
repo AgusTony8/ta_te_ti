@@ -10,6 +10,7 @@ h1 {
 }
 
 #tablero {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
@@ -36,7 +37,9 @@ h1 {
     font-size: 1.5em;
 }
 
-#start{
+#restart{
+    position: relative;
+    z-index: 11;
     width: 300px;
     height: 100px;
     margin-left: 25px;
@@ -46,12 +49,18 @@ h1 {
     cursor:crosshair;
 }
 
-.won{
-    position: absolute;
+.win{
+    z-index: 11;
+    background-color: rgba(83, 187, 118, 0.5);
+}
+
+.winning-module{
+    width: 100vw;
+    height: 100vh;
     top: 0px;
-    width: 100em;
-    height: 100em;
-    z-index: 1000;
+    left: 0px;
     background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 10;
     display: none;
 }
